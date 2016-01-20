@@ -3,6 +3,10 @@ body {
 }
 h1 {
 	color: white
+	font-family: "memoriam-inline-pro",serif;
+}
+h2 {
+	font-family: "adobe-caslon-pro";
 }
 p {
 	color: cornsilk
@@ -15,4 +19,9 @@ p {
 	border: solid;
 	margin: auto;
 	max-width: 800px
+}
+.hr1 {
+	border:none;
+	border-top:1px dashed;
+	width:70%;
 }
