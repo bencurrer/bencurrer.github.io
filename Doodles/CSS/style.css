@@ -1,0 +1,61 @@
+body {
+	background-color: dimgrey;
+	padding: 0px;
+}
+h1 {
+	color: black;
+	font-family: "helvetica",sans-serif;
+	display:inline;
+}
+h2 {
+	font-family: "adobe-caslon-pro";
+}
+p {
+	color: cornsilk
+}
+.top {
+	background-color: rgba(255,255,255,0.75);
+	position:fixed;
+	top: 0px;
+	left:0px;
+	margin: auto;
+	z-index:1;
+	width: 100%;
+	color: black;
+}
+nav{
+	margin:auto;
+	height: 50px;
+	display: inline;
+}
+li{
+	display: inline;
+	margin:	0px;
+	padding: 0px;
+	vertical-align: middle;
+	background-color: rgb(255,255,255);
+}
+li a{
+	display: inline;
+	margin:	0px;
+	padding: 10px;
+	vertical-align: middle;
+	background-color: rgb(255,255,255);
+	border:solid;
+	border-color: white;
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+}
+li a:hover {
+	background-color: black;
+	color:white;
+}
+.hr1 {
+	border:none;
+	border-top:1px dashed;
+	width:70%;
+}
+.buffer{
+	height: 50px;
+}
