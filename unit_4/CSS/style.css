@@ -135,6 +135,7 @@ nav li :hover {
 #first{
 	background-color: navy;
 	font-family: 'Crimson Text', serif;
+	font-size: 18px;
 }
 #first h1{
 	font-family: 'Cinzel', serif;
@@ -157,6 +158,7 @@ nav li :hover {
 #fourth{
 	background-color: DarkOrange;
 	font-family: 'Crimson Text', serif;
+	font-size: 18px;
 }
 #fourth h1{
 	font-family: 'Raleway', sans-serif;
@@ -181,6 +183,7 @@ nav li :hover {
 #seventh{
 	background-color: #2F4F4F;
 	font-family: 'Crimson Text', serif;
+	font-size: 18px;
 }
 #seventh h1{
 	font-family: 'Quattrocento Sans', sans-serif;
