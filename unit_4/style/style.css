@@ -118,7 +118,7 @@ nav li :hover {
 .block{
 	max-width: 25%;
 	border:3px solid white;
-	padding: 10px;
+	padding: 13px;
 	float:left;
 	margin:3%;
 	min-width: 200px;
@@ -136,6 +136,7 @@ nav li :hover {
 	background-color: navy;
 	font-family: 'Crimson Text', serif;
 	font-size: 18px;
+	max-width:58%;
 }
 #first h1{
 	font-family: 'Cinzel', serif;
@@ -151,12 +152,13 @@ nav li :hover {
 #third{
 	background-color: teal;
 	font-family: 'Arvo', serif;
+	height:1100px;
 }
 #third h1{
 	font-family: 'Cinzel', serif;
 }
 #fourth{
-	background-color: DarkOrange;
+	background-color: #EE7600;
 	font-family: 'Crimson Text', serif;
 	font-size: 18px;
 }
@@ -175,6 +177,7 @@ nav li :hover {
 #sixth{
 	background-color: purple;
 	font-family: 'Arvo', serif;
+	max-width: 58%;
 }
 #sixth h1{
 	font-family: 'Raleway', sans-serif;
