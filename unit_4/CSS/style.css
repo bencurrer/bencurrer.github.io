@@ -1,0 +1,198 @@
+@keyframes linkHover {
+	from {
+		background-color: white;
+		border-color: #333333;
+	}
+	to {
+		background-color: #333333;
+		border-color: white;
+	}
+}
+body {
+	background-image: url("images/backdrop.jpg");
+	background-color: #333333;
+	padding: 0px;
+}
+h1 {
+	font-family: "helvetica",sans-serif;
+	display:inline;
+}
+h2 {
+	font-family: "helvetica";
+}
+p {
+	color: white;
+}
+.top {
+	background-color: rgba(255,255,255,0.4);
+	position:fixed;
+	top: 0px;
+	left:0px;
+	margin: auto;
+	z-index:1;
+	width: 100%;
+	color: #333333;
+}
+#underTop{
+	position: fixed;
+	top: 0px
+	left: 0px;
+	width: 100%;
+	height:50px;
+	z-index: -1;
+}
+.logo{
+	background-color: white;
+	padding-left: 90px;
+	width: 300px;
+	height:50px;
+	float:left;
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+	clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+}
+.logo h1{
+	margin-left: 2%;
+	float:left;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+.logo img{
+	width: 50px;
+	float:left;
+}
+
+nav{
+	height: 50px;
+	padding-left:90px;
+	min-width: 340px;
+	width: calc(25% - 90px);
+	float:right;
+	background-color: white;
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+	clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+}
+nav ul{
+	padding-left: 0px;
+	margin-top:14px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+nav li{
+	display: inline;
+	margin:	0px;
+	padding: 0px;
+	vertical-align: middle;
+	background-color: white;
+	font-family: sans-serif;
+	-webkit-clip-path: circle(50% at 50% 50%);
+	clip-path: circle(50% at 50% 50%);
+}
+nav li a{
+	display: inline;
+	margin:	0px;
+	padding: 10px;
+	vertical-align: middle;
+	background-color: white;
+	/*border:solid;*/
+	border-color: white;
+	list-style-type: none;
+	text-decoration: none;
+	color: #333333;
+}
+nav li :hover {
+	background-color: #333333;
+	color:white;
+	animation-name: linkHover;
+	animation-duration: 1s;
+}
+#navBufferRight {
+	height:50px;
+	width:3%;
+	float:right;
+}
+#navBufferLeft {
+	height:50px;
+	width:3%;
+	float:left;
+}
+.block{
+	max-width: 25%;
+	border:3px solid white;
+	padding: 10px;
+	float:left;
+	margin:3%;
+	min-width: 200px;
+	height:500px;
+	overflow: hidden;
+}
+.block h1{
+	text-align: center;
+	color: rgba(255,255,255,0.5)
+}
+.block p{
+	color: rgba(255,255,255,0.5)
+}
+#first{
+	background-color: navy;
+	font-family: 'Crimson Text', serif;
+}
+#first h1{
+	font-family: 'Cinzel', serif;
+}
+
+#second{
+	background-color: olive;
+	font-family: 'Merriweather', serif;
+}
+#second h1{
+	font-family: 'Cinzel', serif;
+}
+#third{
+	background-color: teal;
+	font-family: 'Arvo', serif;
+}
+#third h1{
+	font-family: 'Cinzel', serif;
+}
+#fourth{
+	background-color: DarkOrange;
+	font-family: 'Crimson Text', serif;
+}
+#fourth h1{
+	font-family: 'Raleway', sans-serif;
+}
+#fifth{
+	background-color: maroon;
+	font-family: 'Merriweather', serif;
+}
+#fifth h1{
+	font-family: 'Raleway', sans-serif;
+}
+#sixth{
+	background-color: purple;
+	font-family: 'Arvo', serif;
+}
+#sixth h1{
+	font-family: 'Raleway', sans-serif;
+}
+#seventh{
+	background-color: #2F4F4F;
+	font-family: 'Crimson Text', serif;
+}
+#seventh h1{
+	font-family: 'Quattrocento Sens', sans-serif;
+}
+#eighth{
+	background-color: #2E8B57;
+	font-family: 'Merriweather', serif;
+}
+#eighth h1{
+	font-family: 'Quattrocento Sens', sans-serif;
+}
+#ninth{
+	background-color: #4B0082;
+	font-family: 'Arvo', serif;
+}
+#ninth h1{
+	font-family: 'Quattrocento Sens', sans-serif;
+}
