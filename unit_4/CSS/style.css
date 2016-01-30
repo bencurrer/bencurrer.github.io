@@ -159,7 +159,8 @@ nav li :hover {
 	font-family: 'Crimson Text', serif;
 }
 #fourth h1{
-	font-family: 'Raleway:700', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 #fifth{
 	background-color: maroon;
@@ -167,6 +168,7 @@ nav li :hover {
 }
 #fifth h1{
 	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 #sixth{
 	background-color: purple;
@@ -174,6 +176,7 @@ nav li :hover {
 }
 #sixth h1{
 	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 }
 #seventh{
 	background-color: #2F4F4F;
