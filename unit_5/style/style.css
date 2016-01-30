@@ -13,16 +13,18 @@ body {
 	background-color: #333333;
 	background-attachment: fixed;
 	padding: 0px;
+	margin: 0px;
 }
 h1 {
 	font-family: "helvetica",sans-serif;
 	display:inline;
+	font-size: 2em;
 }
 h2 {
 	font-family: "helvetica";
 }
 p {
-	color: white;
+	
 }
 .top {
 	background-color: rgba(255,255,255,0.4);
@@ -132,6 +134,26 @@ nav li :hover {
 }
 .block p{
 	color: rgba(255,255,255,0.5)
+}
+body .fullSpread{
+	max-width:100%;
+	margin:0;
+	padding:20px;
+	background-color: rgba(255,255,255,0.75);
+	color: black;
+	font-family:"Merriweather", serif;
+	float:left;
+}
+.fullSpread img{
+	padding:20px;
+	width:800px;
+	display: inline-block;
+	float:left;
+}
+.fullSpread h1{
+	text-align: center;
+	display: inherit;
+	padding-top: 130px;
 }
 #first{
 	background-color: navy;
