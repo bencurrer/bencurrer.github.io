@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Order Confirmation</title>
+<style type="text/css">
+body {
+    margin:0 !important;
+    padding:0 !important;
+    background-color:#eeeeee !important;
+    color:#777777 !important;
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size:12px !important;
+    -webkit-text-size-adjust:none !important;
+    -ms-text-size-adjust:none !important;
+}
+h1, h2 {
+    color:#777777 !important;
+    margin-bottom:10px !important;
+}
+a, a:link, a:visited {
+    color:#ed5096 !important;
+}
+a:hover, a:active {
+    text-decoration:none !important;
+    color:#ba0052 !important;
+}
+p {
+    margin:0 0 14px 0 !important;
+}
+img {
+    border:0 !important;
+}
+table td {
+    border-collapse:collapse !important;
+}
+.highlighted {
+    background-color:#ffe69e !important;
+    color:#3b5167 !important;
+    padding:2px 4px !important;
+    border-radius:2px !important;
+    -moz-border-radius:2px !important;
+    -webkit-border-radius:2px !important;
+}
+h2{ 
+    font-weight: 300 !important;
+}
+/*Hotmail and Yahoo specific code*/
+.ReadMsgBody {width: 100%;}
+.ExternalClass {width: 100%;}
+.yshortcuts {color: #d91c5c;}
+.yshortcuts a span {color: #d91c5c; border-bottom: none !important; background: none !important;}
+/*Hotmail and Yahoo specific code*/
+</style>
+
+<!--[if gte mso 9]>
+<style type="text/css">
+#pageContainer {
+    background-color:transparent !important;
+}
+td.list_td {
+    line-height:11pt !important;
+}
+td.list_image {
+    vertical-align:middle;
+}
+td.footer_list {
+    padding-bottom:0px !important;
+    line-height:15pt !important;
+}
+td.footer_list_image {
+    vertical-align:middle !important;
+    padding-bottom:0px !important;
+    padding-bottom:2px !important;
+}
+td.socialIcons {
+    padding-top:20px !important;
+}
+</style>
+<![endif]-->
+</head>
+
+<body background="images/bg.jpg">
+<table id="pageContainer" width="100%" align="center" background="images/bg.jpg" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background-repeat:repeat; background-color:#eeeeee;">
+    <tr>
+        <td style="padding:30px 20px 40px 20px;">
+            <!-- Start of logo, date, forward  and home links container -->
+            <table width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
+            </table>
+            <!-- End of logo, date, forward  and home links container -->
+            <!-- Start of full width image -->
+            <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse;text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
+                <tr>
+                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;"><img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/logo-email-banner.png?5676" width="600" height="159" align="left" border="0" vspace="0" hspace="0" style="display:block; padding-top:20px;" /></td>
+                </tr>
+                <tr>
+                    <td height="11" style="font-size:2px; line-height:0px;"><hr></td>
+                </tr>
+            </table>
+            <!-- End of full width image -->
+            <!-- Start of content with icon on the left -->
+            <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
+                <tr>
+                    <td width="600" colspan="2" style="padding-right:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
+                        <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:36px; line-height:30pt; color:#777777; font-weight:300; margin-top:0; margin-bottom:20px !important; padding:0; text-indent:-3px;">Order Confirmation
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
+                        <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/thankyou.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                    </td>
+                    <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
+                        <p style="font-size:22px; line-height:24pt; color:#888;">
+                            Order number: {{ order_number }} <br>
+                        </p>
+                        <p  style="font-size:16px; line-height:18pt; color:#888;">
+                            Date {{ date | date: "%m/%d/%Y" }}{% if requires_shipping %}<br /><br />
+                            Thank you for placing your order, you've made our day! <br>
+                            Please find your order details below. If any info is wrong, please reply to this email!
+                        </p>
+                       <p style="font-size:16px;"><a href='https://order-printer-emailer.herokuapp.com/download/2d1f9e78eaf5d7616126/{{ id | times: 5769 }}/{{ order_number }}.pdf'>Click here to download a copy of your Invoice</a></p>             
+                        <table width="108" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-spacing:0;">
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="600" colspan="2" height="11" style="font-size:2px; line-height:0px;"><hr></td>
+                </tr>
+            </table>
+            <!-- End of content with icon on the left -->
+            <!-- Start of content with icon on the left -->
+            <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:16px; line-height:18pt; color:#777777;">
+                <tr>
+                    <td width="600" colspan="2" style="padding-right:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:36px; line-height:30pt; color:#777777; font-weight:300; margin-top:0; margin-bottom:20px !important; padding:0; text-indent:-3px;">Order Details</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/details.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                    </td>
+                    <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        {% for line in line_items %}<p>{{ line.title }} {{ line.quantity }}x <strong>{% for p in line.properties %}{% unless p.last == blank %} - {{ p.first }}: {{ p.last }}{% endunless %} {% endfor %}</strong> for {{ line.price | money }} each</p>
+                        {% endfor %}
+                        {% if payment.amount %}
+                        <p><strong>Total: {{ payment.amount }}</strong></p>
+                        {% endif %}
+                        <!-- ORDER TOTALS -->
+                        <p>{% if discounts %}<strong>Discounts:</strong>  {{ discounts_savings | money_with_currency }}{% endif %}<br />
+                        <strong>Subtotal:</strong>   {{ subtotal_price | money_with_currency  }}{% for tax_line in tax_lines %}<br />
+                        <strong>{{ tax_line.title }}:</strong>       {{ tax_line.price | money_with_currency  }}{% endfor %}{% if requires_shipping %}<br />
+                        <strong>Shipping:</strong>   {{ shipping_price | money_with_currency }}{% endif %}<br />
+                        <strong>Total:</strong>      {{ total_price | money_with_currency }}</p>
+                        <br />
+                        <hr>
+                        <br />
+                         <p>
+                                <strong>Billed To:</strong><br />
+                                {% if payment_details.credit_card_company %}
+                                {{ payment_details.credit_card_company }}<br />{% endif %}
+                                {% if payment_details.credit_card_number %}
+                                {{ payment_details.credit_card_number }}<br />{% endif %}
+                                {{ billing_address.name }}<br />
+                                {{ billing_address.street }}<br />
+                                {{ billing_address.city }}, {{ billing_address.province }}  {{ billing_address.zip }}<br />
+                                {{ billing_address.country }}
+                         </p>
+                        <table width="108" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-spacing:0;">
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="600" colspan="2" height="11" style="font-size:2px; line-height:0px;"><hr></td>
+                </tr>
+            </table>
+            <!-- End of content with icon on the left -->
+            <!-- Start of content with icon on the left -->
+            <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:16px; line-height:18pt; color:#777777;">
+
+                <tr>
+                    <td width="600" colspan="2" style="padding-right:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:36px; line-height:30pt; color:#777777; font-weight:300; margin-top:0; margin-bottom:20px !important; padding:0; text-indent:-3px;">Shipping Address</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/shipping.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                    </td>
+                    <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <p>{{ shipping_address.name }} <br />
+                        {{ shipping_address.company }}<br />
+                        {{ shipping_address.street }}<br />
+                        {{ shipping_address.city }}, {{ shipping_address.province }}  {{ shipping_address.zip }}<br />
+                        {{ shipping_address.country }}{% endif %}
+                        </p>
+                        <p style="font-size:16px; line-height:18pt; color:#888;"><i>via {{ shipping_method.title }}</p>
+                      <table width="108" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-spacing:0;">
+                        </table>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td width="600" colspan="2" height="11" style="font-size:2px; line-height:0px;"><hr></td>
+                </tr>
+            </table>
+            <!-- End of content with icon on the left -->
+            <!-- Start of content with icon on the left -->
+            <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:16px; line-height:18pt; color:#777777;">
+
+                <tr>
+                    <td width="600" colspan="2" style="padding-right:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:36px; line-height:30pt; color:#777777; font-weight:300; margin-top:0; margin-bottom:20px !important; padding:0; text-indent:-3px;">Special Instructions</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                    <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/info.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                    </td>
+                        <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <p style="font-size:16px; line-height:18pt; color:#888;">Your Instructions</p>
+                        {{ note }}
+                        <br />  
+                        <table width="108" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-spacing:0;">
+                        </table>   
+                    </td>
+                </tr>
+            </table>
+            <table width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt;">
+            <tr>
+            <td align="center" width="600" colspan="2" style="padding-right:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
+                        <a style="text-align:center;" href="http://www.vinylimpression.co.uk/pages/returns-policy">View Returns Policy</a>
+            </td>
+            </tr>
+            </table>
+            <!-- Start of footer -->
+            <table bgcolor="#444444" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#cccccc;">
+                <tr>
+                    <td>
+                        <table width="600" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#cccccc;">
+                            <tr>
+                                <td width="30"></td>
+                                <td width="130" valign="top" style="padding-top:15px; padding-bottom:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#cccccc;">
+                                    <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px; line-height:15pt; color:#cccccc; font-weight:500; margin-top:0; margin-bottom:10px !important; padding:0; text-indent:-3px; text-align: center;">
+                                        Useful info
+                                    </p>
+                                     <a style="text-decoration:underline; color:#d60a51;" href="http://www.vinylimpression.co.uk/"> vinylimpression.co.uk</a>
+                                     <br>all rights reserved.<br>
+                                     <br><a style="text-decoration: underline; color: #d60a51; line-height: 2;" href="http://www.vinylimpression.co.uk/pages/frequently-asked-questions">See FAQs</a>
+                                     <br><a style="text-decoration: underline; color: #d60a51; line-height: 2;" href="http://www.vinylimpression.co.uk/pages/install">Install instructions</a>
+                                </td>
+                                <td width="30" style="border-left:1px solid #cccccc;"></td>
+                                <td width="160" valign="top" style="padding-top:15px; padding-bottom:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#cccccc;">
+                                    <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:100%; color:#cccccc;">
+                                        <tr>
+                                            <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px; line-height:15pt; color:#cccccc; font-weight:500; margin-top:0; margin-bottom:10px !important; padding:0; text-indent:-3px; text-align: center;">
+                                                Contact us
+                                            </p>    
+                                        </tr>
+                                        <tr>
+                                            <td class="footer_list" width="140" valign="top" style="padding:0 0 9px 0; line-height:9pt;">
+                                                <a href="http://www.vinylimpression.co.uk/" style="text-decoration: underline; color:#d60a51; line-height:9pt;"> vinylimpression.co.uk</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="footer_list" width="140" valign="top" style="padding:0 0 9px 0; line-height:9pt;">
+                                                <a href="mailto:" style="text-decoration:underline; color:#d60a51; line-height:9pt;"> hello@vinylimpression.co.uk</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="footer_list" width="140" valign="top" style="padding:0 0 9px 0; line-height:9pt;">
+                                                01342311858
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="socialIcons" colspan="2" style="padding-top:17px; padding-bottom:5px;">
+                                                <a href="https://www.facebook.com/vinylimpression"><img alt="Facebook" src="https://cdn.shopify.com/s/files/1/0148/8783/files/Facebook_logo.png?10963598872022751344" border="0" vspace="0" hspace="0" /></a>&nbsp;&nbsp;
+                                                <a href="https://twitter.com/vinylimpression"><img alt="Twitter" src="https://cdn.shopify.com/s/files/1/0148/8783/files/Twitter_logo.png?10963598872022751344" border="0" vspace="0" hspace="0" /></a>&nbsp;&nbsp;
+                                                <a href="https://plus.google.com/+VinylimpressionCoUk/posts"><img border="0" vspace="0" hspace="0" alt="Google Plus"src="https://cdn.shopify.com/s/files/1/0148/8783/files/Google_Logo.png?10963598872022751344" /></a>&nbsp;&nbsp;
+                                                <!-- <a href="#"><img border="0" vspace="0" hspace="0" alt="Linkedin" src="{{'linkedinIcon.png' | asset_url }}" /></a> -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="30"></td>
+                                <td width="30" style="border-left:1px solid #cccccc;"></td>
+                                <td width="160" valign="top" style="padding-top:15px; padding-bottom:30px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#cccccc;">
+                                    <p style="font-family:'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:18px; line-height:15pt; color:#cccccc; font-weight:500; margin-top:0; margin-bottom:10px !important; padding:0; text-indent:-3px; text-align: center;">
+                                        Address
+                                    </p>  
+                                    <strong>Vinyl Impression Ltd</strong> <br> Olympic House <br>Birches industrial estate <br>  Imberhorne lane<br>East Grinstead<br>West Sussex<br>RH19 1XZ
+                                </td>
+                                <td width="30"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+                        <!-- End of footer -->
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
