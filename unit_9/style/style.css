@@ -12,7 +12,9 @@ h1 {
 	font-size: 2em;
 }
 h2 {
-	font-family: "helvetica";
+	font-family: "helvetica",sans-serif;
+	display:inline;
+	font-size: 2em;
 }
 p {
 	line-height: 1.2em;
