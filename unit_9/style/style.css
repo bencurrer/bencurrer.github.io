@@ -13,8 +13,9 @@ h1 {
 }
 h2 {
 	font-family: "helvetica",sans-serif;
-	display:inline;
 	font-size: 2em;
+	clear: both;
+	text-align: center;
 }
 p {
 	line-height: 1.2em;
