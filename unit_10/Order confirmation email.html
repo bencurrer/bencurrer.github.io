@@ -52,48 +52,18 @@ h2{
 .yshortcuts a span {color: #d91c5c; border-bottom: none !important; background: none !important;}
 /*Hotmail and Yahoo specific code*/
 </style>
-
-<!--[if gte mso 9]>
-<style type="text/css">
-#pageContainer {
-    background-color:transparent !important;
-}
-td.list_td {
-    line-height:11pt !important;
-}
-td.list_image {
-    vertical-align:middle;
-}
-td.footer_list {
-    padding-bottom:0px !important;
-    line-height:15pt !important;
-}
-td.footer_list_image {
-    vertical-align:middle !important;
-    padding-bottom:0px !important;
-    padding-bottom:2px !important;
-}
-td.socialIcons {
-    padding-top:20px !important;
-}
-</style>
-<![endif]-->
 </head>
 
 <body background="images/bg.jpg">
 <table id="pageContainer" width="100%" align="center" background="images/bg.jpg" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; background-repeat:repeat; background-color:#eeeeee;">
     <tr>
         <td style="padding:30px 20px 40px 20px;">
-            <!-- Start of logo, date, forward  and home links container -->
-            <table width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
-            </table>
-            <!-- End of logo, date, forward  and home links container -->
             <!-- Start of full width image -->
-            <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse;text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#777777;">
+            <table bgcolor="#d60a51" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse;text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px; line-height:15pt; color:#ffffff;">
                 <tr>
-                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;"><img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/logo-email-banner.png?5676" width="600" height="159" align="left" border="0" vspace="0" hspace="0" style="display:block; padding-top:20px;" /></td>
+                    <td style="font-family:Arial, Helvetica, sans-serif; font-size:32px; line-height:40pt; color:#ffffff;"><img alt="　　　Vinyl Impression" src="https://cdn.shopify.com/s/files/1/0148/8783/files/Vi-logo-600px-white.png?11702212494331785696" width="600px" height="160px" align="left" border="0" vspace="0" hspace="0" style="display:block;" /></td>
                 </tr>
-                <tr>
+                <tr bgcolor="#ffffff">
                     <td height="11" style="font-size:2px; line-height:0px;"><hr></td>
                 </tr>
             </table>
@@ -108,7 +78,7 @@ td.socialIcons {
                 </tr>
                 <tr>
                     <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
-                        <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/thankyou.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                        <img alt="Thank You" src="http://cdn.shopify.com/s/files/1/0148/8783/files/thankyou.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block; font-size:18px; line-height:18px;" />
                     </td>
                     <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15pt; color:#777777;">
                         <p style="font-size:22px; line-height:24pt; color:#888;">
@@ -116,10 +86,14 @@ td.socialIcons {
                         </p>
                         <p  style="font-size:16px; line-height:18pt; color:#888;">
                             Date {{ date | date: "%m/%d/%Y" }}{% if requires_shipping %}<br /><br />
-                            Thank you for placing your order, you've made our day! <br>
-                            Please find your order details below. If any info is wrong, please reply to this email!
-                        </p>
-                       <p style="font-size:16px;"><a href='https://order-printer-emailer.herokuapp.com/download/2d1f9e78eaf5d7616126/{{ id | times: 5769 }}/{{ order_number }}.pdf'>Click here to download a copy of your Invoice</a></p>             
+                            Thank you for choosing Vinyl Impression.<br>
+                            Please find your order details below.
+                        </p>           
+                       <table border="0" cellspacing="0" cellpadding="0" width="80%">
+                          <tr>
+                            <td bgcolor="#d60a51" style="padding: 12px 18px 12px 18px; -webkit-border-radius:3px; border-radius:3px" align="center"><a href="https://order-printer-emailer.herokuapp.com/download/2d1f9e78eaf5d7616126/{{ id | times: 5769 }}/{{ order_number }}.pdf" target="_blank" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color:#ffffff!important; text-decoration: none;">Download a copy of your invoice</a></td>
+                          </tr>
+                        </table>
                         <table width="108" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-spacing:0;">
                         </table>
                     </td>
@@ -128,8 +102,7 @@ td.socialIcons {
                     <td width="600" colspan="2" height="11" style="font-size:2px; line-height:0px;"><hr></td>
                 </tr>
             </table>
-            <!-- End of content with icon on the left -->
-            <!-- Start of content with icon on the left -->
+            <!--Section break 1 -->
             <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:16px; line-height:18pt; color:#777777;">
                 <tr>
                     <td width="600" colspan="2" style="padding-right:30px; padding-left:30px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
@@ -138,7 +111,7 @@ td.socialIcons {
                 </tr>
                 <tr>
                     <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
-                        <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/details.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                        <img alt="Order information" src="http://cdn.shopify.com/s/files/1/0148/8783/files/details.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
                     </td>
                     <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
                         {% for line in line_items %}<p>{{ line.title }} {{ line.quantity }}x <strong>{% for p in line.properties %}{% unless p.last == blank %} - {{ p.first }}: {{ p.last }}{% endunless %} {% endfor %}</strong> for {{ line.price | money }} each</p>
@@ -174,8 +147,7 @@ td.socialIcons {
                     <td width="600" colspan="2" height="11" style="font-size:2px; line-height:0px;"><hr></td>
                 </tr>
             </table>
-            <!-- End of content with icon on the left -->
-            <!-- Start of content with icon on the left -->
+            <!--Section break 2-->
             <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:16px; line-height:18pt; color:#777777;">
 
                 <tr>
@@ -185,7 +157,7 @@ td.socialIcons {
                 </tr>
                 <tr>
                     <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
-                        <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/shipping.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                        <img alt="Shipping information" src="http://cdn.shopify.com/s/files/1/0148/8783/files/shipping.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
                     </td>
                     <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
                         <p>{{ shipping_address.name }} <br />
@@ -204,8 +176,7 @@ td.socialIcons {
                     <td width="600" colspan="2" height="11" style="font-size:2px; line-height:0px;"><hr></td>
                 </tr>
             </table>
-            <!-- End of content with icon on the left -->
-            <!-- Start of content with icon on the left -->
+            <!--Section break 3-->
             <table bgcolor="#ffffff" width="600" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse; text-align:left; font-family:Arial, Helvetica, sans-serif; font-weight:normal; font-size:16px; line-height:18pt; color:#777777;">
 
                 <tr>
@@ -215,7 +186,7 @@ td.socialIcons {
                 </tr>
                 <tr>
                     <td width="110" style="padding-right:15px; padding-left:30px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
-                    <img alt="image" src="http://cdn.shopify.com/s/files/1/0148/8783/files/info.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
+                    <img alt="Notes to seller" src="http://cdn.shopify.com/s/files/1/0148/8783/files/info.png?5641" height="110" width="110" border="0" vspace="0" hspace="0" align="left" style="display:block;" />
                     </td>
                         <td width="400" valign="top" style="padding-right:30px; padding-left:15px; padding-bottom:35px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:18pt; color:#777777;">
                         <p style="font-size:16px; line-height:18pt; color:#888;">Your Instructions</p>
@@ -274,9 +245,9 @@ td.socialIcons {
                                         </tr>
                                         <tr>
                                             <td class="socialIcons" colspan="2" style="padding-top:17px; padding-bottom:5px;">
-                                                <a href="https://www.facebook.com/vinylimpression"><img alt="Facebook" src="https://cdn.shopify.com/s/files/1/0148/8783/files/Facebook_logo.png?10963598872022751344" border="0" vspace="0" hspace="0" /></a>&nbsp;&nbsp;
-                                                <a href="https://twitter.com/vinylimpression"><img alt="Twitter" src="https://cdn.shopify.com/s/files/1/0148/8783/files/Twitter_logo.png?10963598872022751344" border="0" vspace="0" hspace="0" /></a>&nbsp;&nbsp;
-                                                <a href="https://plus.google.com/+VinylimpressionCoUk/posts"><img border="0" vspace="0" hspace="0" alt="Google Plus"src="https://cdn.shopify.com/s/files/1/0148/8783/files/Google_Logo.png?10963598872022751344" /></a>&nbsp;&nbsp;
+                                                <a href="https://www.facebook.com/vinylimpression"><img alt="Facebook" src="https://cdn.shopify.com/s/files/1/0148/8783/files/Facebook_logo.png?10963598872022751344" border="0" vspace="0" hspace="0" style="color:#ffffff"/></a>&nbsp;&nbsp;
+                                                <a href="https://twitter.com/vinylimpression"><img alt="Twitter" src="https://cdn.shopify.com/s/files/1/0148/8783/files/Twitter_logo.png?10963598872022751344" border="0" vspace="0" hspace="0" style="color:#ffffff"/></a>&nbsp;&nbsp;
+                                                <a href="https://plus.google.com/+VinylimpressionCoUk/posts"><img border="0" vspace="0" hspace="0" alt="Google Plus"src="https://cdn.shopify.com/s/files/1/0148/8783/files/Google_Logo.png?10963598872022751344" style="color:#ffffff"/></a>&nbsp;&nbsp;
                                                 <!-- <a href="#"><img border="0" vspace="0" hspace="0" alt="Linkedin" src="{{'linkedinIcon.png' | asset_url }}" /></a> -->
                                             </td>
                                         </tr>
